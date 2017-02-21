@@ -1,0 +1,182 @@
+﻿@using Microsoft.Web.Helpers;
+
+@{
+    Layout = "_SULayout.cshtml";
+    Page.Title = "Contract Database";
+    var id = UrlData[0];
+    var db = Database.Open("MainConnectionString");
+    var departments = db.Query("SELECT Distinct department FROM contracts_users");
+    var users = db.Query("SELECT * FROM contracts_users");
+    var entry = db.QuerySingle("SELECT * FROM contracts WHERE id=@0", id);
+    var Trace = HttpContext.Current.Trace;
+    Trace.Warn("New Message here...");
+}
+
+<script type="text/javascript">
+
+    $(function () {
+        //attach fofficer to forigin_dept
+        $('#fofficer_uname').chained('#forigin_dept');      
+
+        //keep fofficer_name and uname in sync...
+        $('#fofficer_uname').change(function () {
+            $('#fofficer_name').val($('#fofficer_uname option:selected').text());
+        });
+
+        //set up datepickers..
+        $('.datepicker').datepicker({
+            changeMonth: true,
+            changeYear: true
+        });        
+
+        //Set up dialog-form, ajax post...
+        $('#dialog-form').dialog({
+
+            autoOpen: true,
+            modal: false,
+            height: 500,
+            width: '60%',
+            buttons: {
+                'Save Entry': function () {
+                    var formData = new FormData($('#entry-form')[0])
+                    $.ajax({
+                        type: "POST",
+                        url: $("#entry-form").attr('action'),
+                        //data: $("#entry-form").serialize(),
+                        data: formData,
+                        async: false,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        dataType: "text",
+                        success: function (response) {
+                            //var logText = '';
+                            //$.each(response, function (index, value) {
+                            //    logText += index + ': ' + value + '\n';
+                            //});
+                            console.log(response.responseText);
+                            console.log('status: ' + response.status + ', ' + response.statusText);
+                            //$('#dialog-form').dialog('close');
+                            window.location.href = '/contracts/';                           
+                        },
+                        error: function (response, textStatus, errorThrown) {
+                            var logText = '';
+                            $.each(response, function (index, value) {
+                                logText += index + ': ' + value + '\n';
+                            });
+                            console.log(logText);
+                            console.log(textStatus);
+                            console.log(errorThrown);
+                            alert('Oops...');
+                            //$('#dialog-form').dialog('close');
+                            
+                        }
+                    });
+                },
+                Cancel: function () {
+                    window.location.href = '/contracts/';
+                    //$('#dialog-form').dialog('close');
+                }
+            }// end buttons
+        });        
+    });
+</script>
+
+<div id="dialog-form" title="Update/ Insert Entry">
+    <form id="entry-form" action="@Href("~/Methods/EntryCRUD")" enctype="multipart/form-data">
+        <div class="row">
+            <span class="label"><label for="forigin_dept">Originating Department:</label></span>
+            <select name="forigin_dept" id="forigin_dept">
+                <option value="">-- Select Department --</option>
+                @foreach (var d in departments)
+                {
+                    if (d.department == entry.forigin_dept)
+                    {
+                        <option value="@d.department" selected>@d.department</option>
+                    }
+                    else
+                    {
+                        <option value="@d.department">@d.department</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="row">
+            <span class="label"><label for="fofficer_uname">Contracting Officer:</label></span>
+            <select name="fofficer_uname" id="fofficer_uname">
+                <option value="">-- Select Officer --</option>
+                @foreach (var u in users)
+                {
+                    if (u.username == entry.fofficer_uname)
+                    {
+                        <option value="@u.username" class="@u.department" selected>@u.name</option>
+                    }
+                    else
+                    {
+                        <option value="@u.username" class="@u.department">@u.name</option>
+                    }
+
+                }
+            </select>
+            <input type="hidden" name="fofficer_name" id="fofficer_name" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="fuse_dept">Using Department:</label></span>
+            <input type="text" name="fuse_dept" id="fuse_dept" size="50" value="@entry.fuse_dept"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="fvendor">Contracted Vendor:</label></span>
+            <input type="text" name="fvendor" id="fvendor" size="50" value="@entry.fvendor"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="faction_date">Action Date:</label></span>
+            <input type="text" name="faction_date" id="faction_date" class="datepicker" size="50" value="@entry.faction_date"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="faction_reason">Action Reason:</label></span>
+            <input type="text" name="faction_reason" id="faction_reason" size="50" value="@entry.faction_reason"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="fend_date">Contract End Date:</label></span>
+            <input type="text" name="fend_date" id="fend_date" class="datepicker" size="50" value="@entry.fend_date"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="famount">Dollar Amount:</label></span>
+            $<input type="text" name="famount" id="famount" size="49" value="@entry.famount"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="ftype">Contract Type/ Procurement Method:</label></span>
+            <select name="ftype" id="ftype">
+                <option>-- Select Type --</option>
+                <option @(entry.ftype == "Equipment Lease" ? "selected" : "") >Equipment Lease</option>
+                <option @(entry.ftype == "IT Maintenance" ? "selected" : "")>IT Maintenance</option@if>
+                <option @(entry.ftype == "Land Lease" ? "selected" : "")>Land Lease</option>
+                <option @(entry.ftype == "Maintenance" ? "selected" : "")>Maintenance</option>
+                <option @(entry.ftype == "Performer" ? "selected" : "")>Performer</option>
+                <option @(entry.ftype == "Service" ? "selected" : "")>Service</option>
+                <option @(entry.ftype == "Sole Source" ? "selected" : "")>Sole Source</option>
+                <option @(entry.ftype == "Other" ? "selected" : "")>Other</option>
+            </select>
+        </div>
+        <div class="row">
+            <span class="label"><label for="finsurance">Insurance Modified or Waived</label></span>
+            <input type="checkbox" name="finsurance" id="finsurance" value="Modified or Waived" value="@entry.finsurance"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="fkeywords">Keywords:</label></span>
+            <input type="text" name="fkeywords" id="fkeywords" size="50" value="@entry.fkeywords"/>
+        </div>
+        <div class="row">
+            <span class="label"><label for="fattachment1">Attachment:</label></span>
+            <input type="file" name="fattachment1" id="fattachment1" />
+            <div id="fattachment1div">
+                <em>(Current file)</em>:
+                <a id="fattachment1DL" target="_blank" href="/contracts/Uploads/@entry.fattachment1">@entry.fattachment1</a>
+            </div>
+
+        </div>
+        <input type="hidden" id="entryid" name="entryid" value="@entry.id"/>
+        <input type="hidden" id="noticeid" name="noticeid" value="@entry.noticeID"/>
+        <input type="hidden" id="reqtype" name="reqtype" value="update" />
+    </form>
+</div>

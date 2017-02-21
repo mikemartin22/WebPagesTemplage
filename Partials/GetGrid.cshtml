@@ -1,0 +1,83 @@
+﻿@{
+
+    string url = Request.ServerVariables["script_name"];
+    PageData["url"] = url;
+    //var db = Database.Open("MainConnectionString");
+    IEnumerable<dynamic> table;
+    var all = Request.QueryString["all"];
+    var sterm = "%" + Request.QueryString["q"] + "%";
+    var dept = PageData["dept"];    
+
+    if (Convert.ToInt32(PageData["level"]) < 3)
+    {
+        if (all == "true")
+        {
+            string sql = "SELECT * FROM contracts WHERE ( " +
+                         "(fkeywords LIKE @0 OR fofficer_uname LIKE @0 OR fponumber LIKE @0 " +
+                         "OR fponumber LIKE @0 OR fdescription LIKE @0 OR fvendor LIKE @0 " +
+                         ") AND forigin_dept = @1) ORDER BY id DESC";
+            //table = db.Query(sql, sterm, dept) ;
+        }
+        else
+        {
+            string sql = "SELECT * FROM contracts WHERE (factive=1 AND " +
+                         "(fkeywords LIKE @0 OR fofficer_uname LIKE @0 OR fponumber LIKE @0 " +
+                         "OR fponumber LIKE @0 OR fdescription LIKE @0 OR fvendor LIKE @0 " +
+                         ") AND forigin_dept LIKE @1) ORDER BY id DESC";
+            //table = db.Query(sql, sterm, dept);
+        }
+    }
+    else
+    {
+        if (all == "true")
+        {
+            string sql = "SELECT * FROM contracts WHERE " +
+                         "(fkeywords LIKE @0 OR fofficer_uname LIKE @0 OR fponumber LIKE @0 " +
+                         "OR fponumber LIKE @0 OR fdescription LIKE @0 OR fvendor LIKE @0 " +
+                         ") ORDER BY id DESC";
+            //table = db.Query(sql, sterm);
+        }
+        else
+        {
+            string sql = "SELECT * FROM contracts WHERE factive=1 AND " +
+                         "(fkeywords LIKE @0 OR fofficer_uname LIKE @0 OR fponumber LIKE @0 " +
+                         "OR fponumber LIKE @0 OR fdescription LIKE @0 OR fvendor LIKE @0 " +
+                         ") ORDER BY id DESC";
+            //table = db.Query(sql, sterm);
+        }
+    }
+
+
+    //var grid = new WebGrid(table, ajaxUpdateContainerId: "grid", canPage: true, rowsPerPage: 100);
+}
+
+@*@grid.GetHtml(
+    htmlAttributes: new { id = "gridt" },
+    tableStyle: "ui-widget ui-widget-content",
+    headerStyle: "ui-widget-header",
+    columns: grid.Columns(
+        grid.Column("", format: @<span><button class="edit-entry" id="@item.ID">Edit: @item.ID</button>
+                    <span class="active" style="display:none">@item.factive</span><span class="notify" style="display:none">@item.noticeId</span></span> ),
+        grid.Column("forigin_dept", "Orginating Dept."),
+        grid.Column("fofficer_uname", "Contracting Officer"),
+        grid.Column("fuse_dept", "Using Dept."),
+        grid.Column("fvendor", "Vendor"),
+        grid.Column("faction_date", "Reminder Date", format: (item)=>
+        {
+            if(item.faction_date != null)
+            {
+                return item.faction_date.Date.ToString("D");
+            }
+            else
+            {
+                return Html.Raw("<span style='font-style:italic'>No Reminder Set</span>");
+            }
+        }, style: "width:auto"),
+        grid.Column("fend_date", "Contract End-date"),
+        grid.Column("Contract Amount", format: @<span>@item.famount.ToString("C2")</span>),
+        grid.Column("", format: @<a class="delete-entry" id="@item.ID" notice="@item.noticeID">Hide: @item.ID</a>)        
+    ),
+    mode: WebGridPagerModes.All,
+    numericLinksCount: 10
+
+)*@

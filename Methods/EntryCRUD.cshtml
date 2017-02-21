@@ -1,0 +1,84 @@
+﻿
+@{
+    //var db = Database.Open("SoftwareConnectionString");
+    var db = Database.Open("DevConnectionString");
+    var Trace = HttpContext.Current.Trace;
+    Trace.Write("REQ: " + Request["reqtype"]);
+    string form = "";
+    foreach(var x in Request.Form.AllKeys)
+    {
+        form += x + "|" + Request.Form[x] + "||";
+    }
+    Trace.Warn(form);
+    if (IsPost)
+    {
+        //Update
+        if (Request["reqtype"] == "update")
+        {
+            //Trace.Warn("UPDATE FIRED");
+            //var db = Database.Open("MainConnectionString");
+
+
+            string sql = "UPDATE t_vendor SET name=@0, url=@1, email=@2, phone=@3, active=@4 WHERE id=@5 ";
+
+            var name = Request.Form["name"];
+            var url = Request.Form["url"];
+            var email = Request.Form["email"];
+            var phone = Request.Form["phone"];
+            var active = 1;
+            var id = Request.Form["entryid"];
+            Trace.Write(String.Format("form fields: {0}, {1}, {2}, {3}, {4}, {5}", name, url, email, phone, active, id));
+            db.Execute(sql, name, url, email, phone, active, id);
+
+        }
+
+        //Delete
+        else if (Request["reqtype"] == "delete")
+        {
+            Trace.Write("DELETE- ID: " + Request["entryid"]);
+            var id = Request["entryid"];
+            var sql = @"UPDATE t_vendor SET active=0 WHERE id=@0";
+            db.Execute(sql, id);
+        }
+
+        //UnDelete
+        else if (Request["reqtype"] == "undelete")
+        {
+            Trace.Write("UNDELETE- ID: " + Request["entryid"]);
+            var id = Request["entryid"];
+            var sql = @"UPDATE t_vendor SET active=1 WHERE id=@0";
+            db.Execute(sql, id);
+        }
+
+        //Create (Insert)
+        else if (Request["reqtype"] == "insert")
+        {
+
+            string sql = "Insert INTO t_vendor ( name, url, email, phone)" +
+                         " Values( @0, @1, @2, @3);";
+
+            var name = Request.Form["name"];
+            var url = Request.Form["url"];
+            var email = Request.Form["email"];
+            var phone = Request.Form["phone"];
+            db.Execute(sql, name, url, email, phone);
+
+        }
+
+    }
+    //Retrieve (Get)
+    else
+    {
+        Response.Cache.SetCacheability(HttpCacheability.NoCache);
+        if (UrlData[0].IsInt())
+        {
+            var sql = @"SELECT * FROM t_vendor WHERE id=@0";
+            var entry = db.QuerySingle(sql, UrlData[0]);
+            Json.Write(entry, Response.Output);
+        }
+    }
+}
+
+
+
+

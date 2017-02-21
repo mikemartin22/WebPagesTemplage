@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "_SULayout.cshtml";
+    try
+    {
+        if (PageData["access"])
+        {
+            Response.Redirect("manage");
+        }
+    }
+    catch (Exception ex)
+    {
+        PageData["access"] = false;
+    }
+}
+@*<p>Session Vars:</p>
+<ul>
+@foreach(string x in Session.Keys)
+{
+    <li>Session[@x]: @Session[x]</li>
+}
+</ul>*@
+<h4>You do not have access to this site.</h4>
+<p>If you believe you have reached this page in error, please click <a href="/help/help.aspx">here</a> to request access.</p>
+<p>Thank you.</p>

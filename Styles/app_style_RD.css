@@ -1,0 +1,92 @@
+﻿@media screen and (min-width: 600px) {
+.left {
+	width: 46%;
+	float: left;
+	border: none;
+	padding-bottom: 5px;
+}
+.right {
+	width: 46%;
+	float: right;
+	border: none;
+	padding-bottom: 5px;
+	text-align: right;
+}
+}
+@media screen and (max-width: 599px) {
+.left {
+	width: 100%;
+	float: left;
+	border: none;
+	padding-bottom: 5px;
+	text-align:center;
+}
+.right {
+	width: 100%;
+	float: left;
+	border: none;
+	padding-bottom: 5px;
+	text-align: center;
+}
+}
+.button-enroll, .button-confirm {
+	cursor: pointer;
+	background-color: green;
+	color: white;
+	border: 1px solid #F7C55A;
+	padding: 5px;
+	border-radius: 6px;
+	box-shadow: 0 8px 6px -6px black;
+	text-shadow: 1px 1px black;
+}
+.button-enroll:hover, button-confirm:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	border: 1px solid maroon;
+	text-shadow: 0px 0px black;
+}
+.button-unenroll, .button-help {
+	cursor: pointer;
+	background-color: #600000;
+	color: white;
+	border: 1px solid #F7C55A;
+	padding: 5px;
+	border-radius: 6px;
+	box-shadow: 0 8px 6px -6px black;
+	text-shadow: 1px 1px black;
+}
+.button-unenroll:hover, .button-help:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	border: 1px solid maroon;
+	text-shadow: 0px 0px black;
+}
+.button_rd {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b00), color-stop(1, #800000) );
+	background: -moz-linear-gradient( center top, #b00 5%, #800000 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1900', endColorstr='#800000');
+	background-color: #900;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	border: 1px solid #f7c55a;
+	display: inline-block;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 1em; /*font-weight: bold;*/;
+	padding: 4px 6px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #000000;
+}
+.button_rd:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #800000), color-stop(1, #b00) );
+	background: -moz-linear-gradient( center top, #800000 5%, #b00 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000', endColorstr='#fe1900');
+	background-color: #800000;
+}
+.button_rd:active {
+	position: relative;
+	top: 1px;
+}

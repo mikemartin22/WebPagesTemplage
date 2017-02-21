@@ -1,0 +1,131 @@
+﻿body {
+    font-family: verdana;
+    font-size: 100%;
+}
+
+input, textarea, select {
+    font-family: "Trebuchet MS";
+}
+
+input[type=text], textarea{
+    width:50%;
+}
+h2 {
+    color: blue;
+}
+
+/*#footer{
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    color: #800000;
+    text-shadow: 0 -1px 1px #999;
+}
+#footer a{
+    color: #800000;
+}*/
+#main td, th{
+    padding: 2px 5px;
+}
+.row {
+    clear: both;
+}
+
+.label {
+    float: left;
+    text-align: right;
+    width: 300px;
+    padding: 1px 10px 4px 10px;
+    color: black;
+    font-size: 12px;
+}
+
+.highlight {
+    background: #ffff99;
+    cursor: pointer;
+}
+
+#gridt {
+    margin: auto;
+    min-width: 60%;
+}
+#gridt tr:hover{
+    background-color: palegoldenrod;
+}
+
+.delete-entry {
+    /*background-color:#ff2626 !important;*/
+    color: black !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding:4px 3px;
+    border-radius:3px;
+    white-space: nowrap;
+    /*font-weight:bold;*/
+}
+
+    .delete-entry:hover {
+        background: #ff2626;
+        text-decoration:underline;
+        border:1px solid black;
+        padding: 4px 2px;
+        text-shadow: 0px 1px 0px #555;
+        color:white !important;
+    }
+
+.grid {
+    margin: 4px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .grid th, .grid td {
+        border: 1px solid #C0C0C0;
+        padding: 5px;
+    }
+
+.head {
+    background-color: #E8E8E8;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.alt {
+    background-color: #E8E8E8;
+    color: #000;
+}
+
+#main legend {
+    border: 0px;
+    width: auto;
+    margin-bottom: 0px;
+}
+
+.cb_label {
+    width: auto !important;
+    font-size: 12px !important;
+    margin: 5px  !important;
+    float: none !important;
+}
+
+td label {
+    font-weight: initial !important;
+    margin: initial !important;
+    padding: initial !important;
+    text-indent: initial !important;
+    min-height: initial !important;
+    width: initial !important;
+    float: initial !important;
+}
+
+form label {
+    width: auto !important;
+    font-size: 12px !important;
+    margin: 5px  !important;
+    float: none !important;
+}
+.inactive{
+    background-color: #DDD;
+    font-style:italic;
+}

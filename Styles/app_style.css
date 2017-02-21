@@ -1,0 +1,1150 @@
+﻿/*css styles */
+html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#ffe),to(#fff));
+	background-image:-webkit-linear-gradient(top,#ffe,#fff);
+	background-image:-moz-linear-gradient(top,#ffe,#fff);
+	background-image:-ms-linear-gradient(top,#ffe,#fff);
+	background-image:-o-linear-gradient(top,#ffe,#fff);
+	background-image:linear-gradient(top,#ffe,#fff);	
+	background-repeat:no-repeat;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+hr{
+	border:1px #F7C55A solid;
+	width:98%;
+}
+.dates{
+	background-color: #F7C55A;
+	padding: 10px;
+	color: black;
+	text-align:center;
+	border-top:1px maroon solid;
+	border-bottom:1px maroon solid;
+}
+.dates2{
+	background-color: black;
+	padding: 10px;
+	color: white;
+	text-align:center;
+	border-top:1px #F7C55A solid;
+	border-bottom:1px #F7C55A solid;
+}
+.dates2 h3{
+	color: white;
+	font-size: 16px;
+}
+.error{
+	background:red;
+/*	background-image:-webkit-gradient(linear,left top,left bottom,from(#f00),to(#900));
+	background-image:-webkit-linear-gradient(top,#f00,#900);
+	background-image:-moz-linear-gradient(top,#f00,#900);
+	background-image:-ms-linear-gradient(top,#f00,#900);
+	background-image:-o-linear-gradient(top,#f00,#900);
+	background-image:linear-gradient(top,#f00,#900);*/
+	color:white;
+	padding:7px 25px;
+	margin:5px -10px;
+	border-bottom:0px maroon solid;
+	font-weight:bold;
+}
+.error a { color: white;}
+.error a:visited { color: white;}
+.error a:hover { color: white;}
+.error a:link { color: white;}
+
+.update{
+	background:green;
+/*	background-image:-webkit-gradient(linear,left top,left bottom,from(#090),to(#060));
+	background-image:-webkit-linear-gradient(top,#090,#030);
+	background-image:-moz-linear-gradient(top,#090,#030);
+	background-image:-ms-linear-gradient(top,#090,#030);
+	background-image:-o-linear-gradient(top,#090,#030);
+	background-image:linear-gradient(top,#090,#030);*/
+	color:white;
+	padding:7px 25px;
+	margin:5px -10px;
+	border-bottom:0px maroon solid;
+	font-weight:bold;
+}
+
+.update a { color: white;}
+.update a:visited { color: white;}
+.update a:hover { color: white;}
+.update a:link { color: white;}
+
+.dates h3{
+	color:black;
+	font-size:16px;
+}
+.input{
+	background-color: #F7C55A;
+	color: black;
+	text-align:center;
+	padding:5px;}
+.ai1{
+	background-color: #F7C55A;
+	color: black;
+	text-align:center;
+	padding:5px;}
+.ai2{
+	background-color: #FBDC9B;
+	color: black;
+	text-align:center;
+	padding:5px;}
+
+.menu {
+	padding: 5px;
+	text-align:center;
+}
+.floater{
+	float: right;
+	padding:2px;
+	margin:5px;
+	color:white;
+	background-color:maroon;
+	width: 250px;
+}
+.floatContent{
+	color:black;
+	background-color:white;	
+	padding: 10px;
+}
+.tHead{
+	padding:3px;
+	color:white;
+	background-color:maroon;
+}
+.titleBorder{
+	border-top:1px maroon solid;
+	padding:3px 0px 0px 7px; /*Top Right Bottom Left*/
+	margin:7px -5px 5px -5px; /*Top Right Bottom Left*/
+	text-align:left;
+	color:blue;
+	font-weight:bold;
+}
+.titleBorder2{
+	border-top:1px maroon solid;
+	padding:2px 0px 1px 10px;
+	margin:5px -10px 10px -10px;
+	text-align:left;
+	color:blue;
+	font-weight:bold;
+}
+#footer{
+	border:1px solid #2a2a2a;
+	padding:10px;
+	background:#800000;color:#fff;
+	font-weight:bold;
+	text-shadow:0 -1px 1px #000;
+/*	background-image:-webkit-gradient(linear,left top,left bottom,from(#800000),to(#900));
+	background-image:-webkit-linear-gradient(top,#800000,#900);
+	background-image:-moz-linear-gradient(top,#800000,#900);
+	background-image:-ms-linear-gradient(top,#800000,#900);
+	background-image:-o-linear-gradient(top,#800000,#900);
+	background-image:linear-gradient(top,#800000,#900);
+*/	text-align:center; 
+	font-size: 8.5pt; 
+	margin-top: 15px;
+}
+#footer a{
+	color:orange;
+}
+
+.header-container {
+	background-color:maroon;
+	text-shadow:0 -1px 1px #000;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#900),to(#500));
+	background-image:-webkit-linear-gradient(top,#900,#500);
+	background-image:-moz-linear-gradient(top,#900,#500);
+	background-image:-ms-linear-gradient(top,#900,#500);
+	background-image:-o-linear-gradient(top,#900,#500);
+	background-image:linear-gradient(top,#900,#500);
+ 	margin-bottom: 30px; box-shadow: 3px 3px 3px 3px #333;
+ 	min-height: 80px;
+	line-height: 80px;
+}
+
+.header-title {
+	color: white; min-width: 970px; max-width: 1410px; padding: 0px 10px; margin: 0px auto;
+	font-size: 24px; font-weight:bold;
+}
+.header-title img {border-width: 0px; float:right; margin-top: 10px;}
+
+#header {
+	color: white;
+	background-color:maroon;
+	text-shadow:0 -1px 1px #000;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#900),to(#500));
+	background-image:-webkit-linear-gradient(top,#900,#500);
+	background-image:-moz-linear-gradient(top,#900,#500);
+	background-image:-ms-linear-gradient(top,#900,#500);
+	background-image:-o-linear-gradient(top,#900,#500);
+	background-image:linear-gradient(top,#900,#500);
+	padding: 10px;line-height:normal;
+}
+#headeradmin {
+	color: white;
+	background-color:black;
+	padding: 10px;
+}
+#header a{
+	color: white;
+	text-decoration:none;
+}
+#main{
+/*	
+	background:white;
+
+*/	
+	padding: 10px;
+	text-align:left;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+}
+#main fieldset {
+	text-shadow:0 -1px 1px #e4e4e4;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	border: 1px maroon solid;
+	padding: 10px 10px 10px 10px;
+	margin:5px 0px 15px -3px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#main legend {
+	color: maroon;
+	font-size: 13pt;
+	font-weight:bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#main fieldset p {
+	margin-top: 10px;
+}
+#content{
+	padding: 10px;
+	width:99%;
+	margin:0px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+h6 {
+	color: maroon;
+}
+
+h5 {
+	color: maroon;
+}
+
+h4 {
+	color: maroon;
+}
+
+h3 {
+	color: maroon;
+}
+
+h2 {
+	color: maroon;
+}
+
+#main fieldset {
+	border: 1px maroon solid;
+	padding: 10px 10px 10px 10px;
+	width:95%;
+	margin-bottom: 20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#main legend {
+	color: maroon;
+	font-size: 16pt;
+	font-weight:bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#main fieldset p {
+	margin-top: 10px;
+}
+
+#main a{
+	color: maroon;
+}
+#main a:link{
+	color: maroon;
+}
+#main a:hover{
+	color: #900000;
+}
+#main a:visited{
+	color: #600000;
+}
+#main h1 {
+	color: maroon; line-height:normal;
+}
+#main li {
+	margin-bottom: 5px;
+}
+
+#main #menu h3{
+	margin-bottom: 0; padding:0;
+}
+
+#main td {
+	padding: 2px;
+	border: 1px gray solid;
+	font-size: 100%;
+}
+#gridborder {
+}
+#gridborder td {
+	border: 1px gray solid;
+	padding: 5px;
+	font-size: 100%;
+}
+#main .noborder {
+	border: 0px gray solid;
+	margin: 10px 0px 10px 0px;
+}
+#main .noborder td {
+	padding: 3px;
+	border: 0px gray solid;
+	vertical-align:top;
+	font-size: 100%;
+}
+#main .border {
+	border: 1px gray solid;
+	margin: 10px 0px 10px 0px;
+}
+#main .border td {
+	padding: 3px;
+	border: 1px gray solid;
+	vertical-align:top;
+}
+#main table {
+	border:0;
+	border-collapse:collapse;
+}
+#main .login td {
+	border: 0;
+}
+
+#main .err {
+	color: red;
+	font-weight:bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#main .info {
+	color: #600000;
+	font-style:italic;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#main .welcome {
+	padding: 5px;
+	color: black;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+#main .ulgoldlist {
+	list-style-image: url('/common/images/goldpbullet.gif');
+}
+#main .ulgoldlist li {
+	padding-bottom: 5px;
+}
+#menu {
+	padding: 10px; 
+	font-size: 1.1em; 
+	font-weight: bold;	
+	margin:-10px -10px -5px;
+	border-bottom:1px maroon dotted;
+}
+#menu a {
+	color: maroon;
+}
+
+#datenav {
+	text-align: center;
+	width: 500px;
+	font-size: 12pt;
+}
+
+#maincontent .shadow-container {float: right; width: 200px; margin: 10px 0px 10px 10px; border: 1px #600000 solid; box-shadow: 4px 4px 6px -3px black; border-radius: 6px; overflow: hidden;}
+#maincontent .shadow-container .image {margin-bottom: -2px;}
+#maincontent .shadow-container .header {font-weight: bold; font-size: 13px; color: white; background: #800000; padding: 3px 0px 6px 0px; text-align: center; margin: 0; position: relative; z-index: 1;}
+#maincontent .shadow-container .content {font-size: 10px; padding: 5px; line-height: 14px;}
+#maincontent .shadow-container .content p {font-size: 12px; margin: 5px;}
+#maincontent .shadow-container .content a {text-decoration: none; color: maroon; font-size: 12px}
+#maincontent .shadow-container .content a:hover {color: #333333;}
+#maincontent .shadow-container .content .bullet {background-image:url('/common/images/goldmaroon_bullet.gif'); background-repeat:no-repeat; padding-left: 12px;}
+#maincontent .shadow-container .content h1{color: maroon; margin: 0px; font-size: 14px;}
+#maincontent .shadow-container .content h2{color: maroon; margin: 0px; font-size: 12px;}
+#maincontent .shadow-container .content img {box-shadow: 4px 4px 6px -3px #666; border-radius: 4px;}
+
+#shadow-container {
+    left: 3px;
+    top: 3px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    float:right;
+}
+
+#shadow-container .container {
+    position: relative;
+    right: -2px;
+    top: -2px;
+}
+
+    #shadow-container .shadow3 {
+    position: relative;
+    right: -2px;
+    top: -2px;
+}
+
+    #shadow-container .shadow2 {
+    position: relative;
+    right: -2px;
+    top: -2px;
+}
+
+    #shadow-container .shadow1 {
+        background: #F1F0F1;
+        
+    }
+
+    #shadow-container .shadow2 {
+        background: #DBDADB;
+    }
+
+    #shadow-container .shadow3 {
+        background: #B8B6B8;
+    }
+
+    #shadow-container .container {
+        background: #ffffff;
+        border: 0px solid #600000;
+        padding: 0px;
+    }
+        
+    #shadow-container .container .content h1 {
+	margin: 5px 0px 10px 0px;
+	font-size: 10pt;
+	}
+    #shadow-container .container .content h2 {
+	margin: 5px 0px 10px 0px;
+	font-size: 9.5pt;
+	}
+    #shadow-container .container .content h3 {
+	margin: 5px 0px 10px 0px;
+	font-size: 9pt;
+	}
+    #shadow-container .container .content h4 {
+	margin: 5px 0px 10px 0px;
+	font-size: 8.5pt;
+	}
+    #shadow-container .container .content h5 {
+	margin: 5px 0px 10px 0px;
+	font-size: 8.5pt;
+	}
+    #shadow-container .container .content h6 {
+	margin: 5px 0px 10px 0px;
+	font-size: 8.5pt;
+	}
+
+#badgeshadow {
+	float:right;
+	/*width: 220px;*/
+	padding:15px;
+	filter: shadow(color:gray,strength:6, direction:-135);
+}
+#badge {
+	float:right; 
+	width: 180px; 
+	border: 1px #600000 solid; 	
+	margin-left: 10px;
+	background-color:#eeeeee;
+}
+#badge .header {
+	background-image:url('/common/homepage/images/newshead.jpg'); 
+	color: white; 
+	text-align:center;
+	margin-bottom;
+	float:none;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 9pt;
+	padding: 1px 0px 2px 0px;
+}
+#badge .content {
+	color: black;
+	float:none;
+	margin: 0px;
+	padding: 5px 10px 10px 5px;
+	font-size: 8pt;
+	background-image:url('/common/css/badgecontentbg.png');
+	line-height: 160%;
+
+}
+#badge .content p {
+	font-size: 8pt;
+
+}
+
+#badge .content a {
+	color: maroon;
+	text-decoration:none;
+	font-weight: normal;
+	font-size: 8pt;
+}
+#badge .content a:visited {
+	color: #600000;
+	text-decoration:none;
+}
+#badge .content a:hover {
+	color: #333333;
+	text-decoration:underline;
+}
+
+#badge .content ul {
+	list-style-image: url('/common/images/goldmaroon_bullet.gif');
+/*
+	margin-left: 2em;
+
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+*/
+
+}
+
+#badge .content li {
+	font-size: 8pt;
+	/*
+	margin: 0px 0px 5px 0px;
+	margin-left: 0;
+	*/
+	margin-bottom: 7px;
+	line-height:160%;
+
+}
+
+#badge .content li a {
+	color: maroon;
+	text-decoration:none;
+	font-weight: normal;
+	font-size: 8pt;
+}
+#badge .content li a:visited {
+	color: #600000;
+	text-decoration:none;
+}
+#badge .content li a:hover {
+	color: #333333;
+	text-decoration:underline;
+}
+#badge .content ol {
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+#badge .content ol a {
+	color: maroon;
+	text-decoration:underline;
+	font-weight: normal;
+	font-size: 8pt;
+}
+#badge .content ol a:visited {
+	color: #600000;
+	text-decoration:none;
+
+}
+#badge .content ol a:hover {
+	color: #333333;
+	text-decoration:underline;
+}
+/*#badge .content li {
+	margin-bottom: 7px;
+	line-height:160%;
+		
+}*/
+#badge .content img {
+	border:0;
+		
+}
+#badge .content .bullet {
+	background-image:url('/common/images/goldmaroon_bullet.gif');
+	background-repeat:no-repeat;
+	margin: 0;
+	margin: 5px 3px 10px 10px;
+	padding-left: 12px;
+}
+
+#previous {
+	float: right;
+	text-align: right;
+	line-height: 150%;
+	font-size: 7.5pt;
+	margin-bottom: 5px;
+}
+#previous a {
+	text-decoration: none;
+	font-weight:normal;	
+	font-size: 7.5pt;
+}
+#previous a:active {
+	text-decoration: none;	
+}
+#previous a:visited {
+	text-decoration: none;	
+}
+#previous a:hover {
+	text-decoration: underline;
+	color: #666666;	
+}
+.select-round{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0px solid #F60;
+    background:#fff;
+    padding:2px 5px 2px 5px;
+    display:inline-block;
+    text-decoration:none;
+    position: relative;
+    outline: none;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.select-round:hover{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0px solid #F7C55A;
+    padding:2px 5px 2px 5px;
+    display:inline-block;
+    text-decoration:none;
+    background:#e4e4e4;
+    position: relative;
+    outline: none;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-button {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding:2px 4px 2px 4px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:#F7C55A;
+    color:#000;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-button:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid maroon;
+    background-color:#fff;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-button2 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #F7C55A;
+    padding:1px 3px 1px 3px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:maroon;
+    color:#fff;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-button2 a { color: white;}
+
+.input-button2:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid maroon;
+    font-weight:normal;
+    background-color:#fff;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonY {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding:1px 3px 1px 3px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:#F7C55A;
+    color:#000;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonY:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid maroon;
+    font-weight:normal;
+    background-color:#fff;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonR {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding:2px 4px 2px 4px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:maroon;
+    color:#fff;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonR:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid maroon;
+    font-weight:normal;
+    background-color:#fff;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonG {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding:2px 4px 2px 4px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:green;
+    color:#fff;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonG:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid green;
+    font-weight:normal;
+    background-color:#fff;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonG2 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding:1px 2px 1px 2px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:green;
+    color:#fff;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonG2:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid green;
+    font-weight:normal;
+    background-color:#e4e4e4;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonB {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding:2px 4px 2px 4px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:navy;
+    color:#fff;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonB:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid navy;
+    font-weight:normal;
+    background-color:#e4e4e4;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonB2 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding:1px 2px 1px 2px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    background:navy;
+    color:#fff;
+    cursor:pointer;
+    position: relative;
+    
+	outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.input-buttonB2:hover { 
+    text-decoration:none; 
+    color:maroon; 
+    cursor:pointer;
+    border:1px solid navy;
+    font-weight:normal;
+    background-color:#e4e4e4;
+    position: relative;
+    outline: none;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.login{
+	border-bottom:1px maroon dotted;
+	padding:0px 0px 2px 10px;
+	margin:-7px -10px 15px -10px;
+	text-align:left;
+	color:#000000;
+	font-weight:bold;
+}
+.footer{
+	border:1px solid #2a2a2a;
+	padding:3px;
+	margin:15px 0px;
+	background:#800000;color:#fff;
+	font-weight:bold;
+	text-shadow:0 -1px 1px #000;
+	text-align:center;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#800000),to(#900));
+	background-image:-webkit-linear-gradient(top,#800000,#900);
+	background-image:-moz-linear-gradient(top,#800000,#900);
+	background-image:-ms-linear-gradient(top,#800000,#900);
+	background-image:-o-linear-gradient(top,#800000,#900);
+	background-image:linear-gradient(top,#800000,#900);
+}
+.questions{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	float:right; 
+	margin:0px 0px 5px 10px; /*Top Right Bottom Left*/
+	padding: 5px;  /*Top Right Bottom Left*/
+	border: 1px maroon solid; 
+	width: 280px; 
+	text-align: center;
+	background-color:#fff;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#ccf));
+	background-image:-webkit-linear-gradient(top,#fff,#ccf);
+	background-image:-moz-linear-gradient(top,#fff,#ccf);
+	background-image:-ms-linear-gradient(top,#fff,#ccf);
+	background-image:-o-linear-gradient(top,#fff,#ccf);
+	background-image:linear-gradient(top,#fff,#ccf);
+}
+.field {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	margin:0px 5px;
+	background-color: #e4e4e4; 
+	padding: 3px 5px 3px 5px; 
+	border: 1px maroon solid;
+	text-align: center;
+}
+
+.validate {
+	color: red;
+	font-weight:normal;
+	font-size: 12px;
+	float: none;
+}
+
+.button-enroll {cursor: pointer; background-color: green; color: white;  border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-enroll:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-help {cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+
+#main a.button-regular {text-decoration: none; cursor: pointer; background-color: #900000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-regular:visited {text-decoration: none; cursor: pointer; background-color: #900000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-regular:hover {background-color: #600000; color: #F7C55A; border: 1px solid white; text-decoration:none; text-shadow: 0px 0px 0px white;}
+
+#main a.button-excel {text-decoration: none; cursor: pointer; background-color:#006600; color:white; border: 1px solid #FFFF99; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #006600;}
+#main a.button-excel:visited {text-decoration: none; cursor: pointer; background-color:#006600; color:white; border: 1px solid #FFFF99; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #006600;}
+#main a.button-excel:hover {background-color:#009933; color: #FFFF99 ; border: 1px solid #FFFF99; text-decoration:none; text-shadow: 0px 0px 0px white;}
+
+#main a.button-help {text-decoration: none; cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-help:visited {cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-help:hover {background-color: white; color: #000; border: 1px solid maroon; text-decoration:none; text-shadow: 0px 0px 0px white;}
+
+#main a.button-cancel {text-decoration: none;cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-cancel:visited {cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-cancel:hover {background-color: white; color: #000; border: 1px solid maroon; text-decoration:none; text-shadow: 0px 0px 0px white;}
+
+#main a.button-confirm {text-decoration: none;cursor: pointer; background-color: green; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-confirm:visited {cursor: pointer; background-color: green; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-confirm:hover {background-color: white; color: #000; border: 1px solid maroon; text-decoration:none; text-shadow: 0px 0px 0px white;}
+
+#main a.button-delete {text-decoration: none;cursor: pointer; background-color:#CC0000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-delete:visited {cursor: pointer; background-color: #CC0000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+#main a.button-delete:hover {background-color: white; color: #000; border: 1px solid maroon; text-decoration:none; text-shadow: 0px 0px 0px white;}
+
+#main a.button-small {font-size: 13px; padding: 5px;}
+
+.button-unenroll {cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-help:hover  {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-unenroll:hover  {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-confirm {cursor: pointer; background-color: green; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-confirm:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-back {cursor: pointer; background-color: navy; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-back:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-login-logout {cursor: pointer; background-color: maroon; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-login-logout:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-regular {cursor: pointer; background-color: maroon; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-regular:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+
+.button-orange {cursor: pointer; background-color:#FFCC00; color:navy; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #FFCC66;}
+.button-orange:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-gold {cursor: pointer; background-color:#FFCC00; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px gold;}
+.button-gold:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-white {cursor: pointer; background-color:#FFFFFF; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #e4e4e4;}
+.button-white:hover {cursor: pointer; background-color: #FFFFCC; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+.button-whiteURL {cursor: pointer; background-color:#FFFFFF; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; text-shadow: 1px 1px #e4e4e4;}
+.button-whiteURL:hover {cursor: pointer; background-color:#FFFF66; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-enroll16 {font-size: 16px; cursor: pointer; background-color: green; color: white;  border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-enroll:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-help16 {font-size: 16px; cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+
+.button-unenroll16 {font-size: 16px; cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-help:hover  {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-unenroll16:hover  {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-confirm16 {font-size: 16px; cursor: pointer; background-color: green; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-confirm16:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-back16 {font-size: 16px; cursor: pointer; background-color: navy; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-back16:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-login-logout16 {font-size: 16px; cursor: pointer; background-color: maroon; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-login-logout16:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-regular16 {font-size: 16px; cursor: pointer; background-color: maroon; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-regular16:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-orange16 {font-size: 16px; cursor: pointer; background-color:#FFCC00; color:navy; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #FFCC66;}
+.button-orange16:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-gold16 {font-size: 16px; cursor: pointer; background-color:#FFCC00; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px gold;}
+.button-gold16:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+/*----------------- CSS Expandable content---------------------*/
+#expandable {vertical-align: top; height:auto !important; margin: 10px 0px 10px 0px; }
+#expandable .expandable_show {display: none; }
+#expandable .expandable_hide:target + .expandable_show {display: inline;}
+#expandable .expandable_hide:target {display: none;}
+#expandable .expandable_hide:target ~ .expandable_list {display:inline;}
+/*style the (+) and (-) */
+.expandable_show {}
+#expandable .expandable_hide {}
+.expandable_show:hover {}
+#expandable .expandable_hide:hover {}
+
+#expandable .expandable_text { float: none; height: auto; width: 90%; line-height: 22px; padding-left: 10px; margin-bottom: 0px; margin-left: 20px; border-bottom: 0px black solid;}
+
+#expandable .expandable_list {display:none; height:auto; margin:0; float: left; margin-left: 30px; padding-top: 10px}
+#expandable .expandable_list p{ height:auto; margin:0;}
+
+#expandable button {float: none; cursor:pointer; font-weight: bold; font-family: monospace; font-weight:bold; font-size: 14px; padding-left: 7px; padding-right: 7px;}
+
+#expandable .buttonshow {background: #F7C55A; color: #000; border: 1px maroon dotted; border-radius: 5px; box-shadow: 1px 1px 2px #000; /*text-shadow: 0 1px 0 #666;*/}
+#expandable .buttonhide {background: maroon; color: #FFF;  border: 1px maroon dotted; border-radius: 5px; box-shadow: 1px 1px 2px #000; /*text-shadow: 0 1px 0 #666;*/}
+#expandable .buttonshow:hover {background: white; color: #000000;}
+#expandable .buttonhide:hover {background: white; color: #000000;}
+
+/*
+//////////////////////////////////////////////////////////////////////////////////////////////
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+//////////////////////////////////////////////////////////////////////////////////////////////
+*/
+@media (max-width:36.000em) {
+
+
+#header img {display: none}
+
+
+
+.button-enroll {font-size: 16px; cursor: pointer; background-color: green; color: white;  border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-enroll:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-help {font-size: 16px; cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+
+.button-unenroll {font-size: 16px; cursor: pointer; background-color: #600000; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-help:hover  {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-unenroll:hover  {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-confirm {font-size: 16px; cursor: pointer; background-color: green; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-confirm:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-back {font-size: 16px; cursor: pointer; background-color: navy; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-back:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-login-logout {font-size: 16px; cursor: pointer; background-color: maroon; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-login-logout:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-regular {font-size: 16px; cursor: pointer; background-color: maroon; color: white; border: 1px solid #F7C55A; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px black;}
+.button-regular:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+
+.button-orange {font-size: 16px; cursor: pointer; background-color:#FFCC00; color:navy; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #FFCC66;}
+.button-orange:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-gold {font-size: 16px; cursor: pointer; background-color:#FFCC00; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px gold;}
+.button-gold:hover {cursor: pointer; background-color: white; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+.button-white {font-size: 16px; cursor: pointer; background-color:#FFFFFF; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; box-shadow: 0 8px 6px -6px black; text-shadow: 1px 1px #e4e4e4;}
+.button-white:hover {cursor: pointer; background-color: #FFFFCC; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+.button-whiteURL {font-size: 16px; cursor: pointer; background-color:#FFFFFF; color: #600000; border: 1px solid #333333; padding: 5px; border-radius: 6px; text-shadow: 1px 1px #e4e4e4;}
+.button-whiteURL:hover {cursor: pointer; background-color:#FFFF66; color: black; border: 1px solid maroon; text-shadow: 0px 0px black}
+
+
+
+}

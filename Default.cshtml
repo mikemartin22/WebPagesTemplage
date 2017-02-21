@@ -1,0 +1,89 @@
+﻿@*@using Microsoft.Web.Helpers;*@
+
+@{
+    Layout = "_SULayout.cshtml";
+    Page.Title = "MATHEMATICS AND COMPUTER SCIENCE INTERNSHIP APPLICATION";
+    
+}
+
+
+<div id="intern_app" title="new_intern_application">
+    <form id="entry-form" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <span class="label">Course Enrolled in:</span>
+            <label><input type="radio" name="fuse_uname" class="required" />COSC 380 </label>
+                <label><input type="radio" name="fuse_uname" />MATH 380</label>
+        </div>
+        <div class="row">
+            <span class="label"><label for="sem_year">Semester/Year of Enrollment: (Ex. Fall 2017)</label></span>
+            <input type="text" name="sem_year" id="sem_year" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="fname">Student First Naem:</label></span>
+            <input type="text" name="fname" id="fname" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="lname">Student Last Naem:</label></span>
+            <input type="text" name="lname" id="lname" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="id_num">Student ID Number:</label></span>
+            <input type="text" name="id_num" id="id_num" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="major">Major:</label></span>
+            <input type="text" name="major" id="major" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="major">Class Standing:</label></span>
+            <select name="major" id="major" class="required">
+                <option value="" selected="true" disabled="disabled">Choose Standing</option>
+                <option value="Freshman">Freshman</option>
+                <option value="Sophomore">Sophomore</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+            </select>
+        </div>       
+        <div class="row">
+            <span class="label"><label for="student_address">Student Address:</label></span>
+            <textarea name="student_address" id="student_address" class="required"></textarea>
+        </div>
+        <div class="row">
+            <span class="label"><label for="student_phone">Student Phone Number:</label></span>
+            <input type="text" name="student_phone" id="student_phone" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="advisor_name">Salisbury University Internship Advisor's Name:</label></span>
+            <input type="text" name="advisor_name" id="advisor_name" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="firm_name">Firm or Institution Name:</label></span>
+            <input type="text" name="firm_name" id="firm_name" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="firm_phone">Firm or Institution Phone Number:</label></span>
+            <input type="text" name="firm_phone" id="firm_phone" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="firm_address">Firm or Institution Address:</label></span>
+            <textarea name="firm_address" id="firm_address" class="required"></textarea>
+        </div>
+        <div class="row">
+            <span class="label"><label for="supervior_name">Work Supervisor's Name:</label></span>
+            <input type="text" name="supervior_name" id="supervior_name" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="supervior_title">Work Supervisor's Title:</label></span>
+            <input type="text" name="supervior_title" id="supervior_title" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="internship_name">Brief Name of Internship:</label></span>
+            <input type="text" name="internship_name" id="internship_name" class="required" />
+        </div>
+        <div class="row">
+            <span class="label"><label for="goals">Proposed Goals and Expectations of the Internship:</label></span>
+            <textarea name="firm_address" id="goals" class="goals"></textarea>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</div>

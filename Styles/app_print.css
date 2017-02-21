@@ -1,0 +1,174 @@
+﻿/*css styles */
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0px 0px 0px 0px;
+}
+@media all
+{
+  .page-break  { display:none; }
+}
+
+@media print
+{
+  .page-break  { display:block; page-break-before:always; }
+}
+#printnot{
+	display: none;
+}
+.noprint{
+	display: none;
+}
+.login {
+	display:none
+}
+.questions {
+	display:none
+}
+#header {
+	color: black;
+	background-color:#FFFFFF;
+	background-image:url('/common/images/su_logo_black.gif');
+	background-repeat:no-repeat;
+	background-position:right;
+	padding: 10px;
+	height: 60px;
+	vertical-align:middle;
+	text-shadow:0;
+
+}
+#header td {
+	vertical-align:bottom;
+}
+
+#header img{
+	display: none;
+}
+
+#main{
+	padding: 10px;
+	text-shadow:0;
+}
+
+h6 {
+	color: #000000;
+	text-shadow:0;
+}
+
+h5 {
+	color: #000000;
+	text-shadow:0;
+}
+
+h4 {
+	color: #000000;
+	text-shadow:0;
+}
+
+h3 {
+	color: #000000;
+	text-shadow:0;
+}
+
+h2 {
+	color: #000000;
+	text-shadow:0;
+}
+
+#main fieldset {
+	border: 1px maroon solid;
+	padding: 10px 10px 10px 10px;
+	width: 650px;
+	margin-bottom: 20px;
+}
+#main legend {
+	color: #000000;
+	font-size: 16pt;
+	font-weight:bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+
+#main fieldset p {
+	margin-top: 10px;
+}
+
+#main a{
+	color: #000000;
+}
+#main a:hover{
+	color: gray;
+}
+#main a:visited{
+	color: #333333;
+}
+#main h1 {
+	color: #000000;
+	text-shadow:0;
+}
+
+#main #menu h3{
+	margin-bottom: 0; padding:0;
+	text-shadow:0;
+}
+
+#main td {
+	padding: 2px;
+	border: 1px gray solid;
+    font-size: 90%;
+}
+
+#gridborder {
+}
+#gridborder td {
+	border: 0px gray solid;
+	padding: 5px;
+}
+
+#main .noborder {
+	border: 0px gray solid;
+	margin: 10px 0px 10px 0px;
+}
+#main .noborder td {
+	padding: 3px;
+	border: 0px gray solid;
+}
+#main table {
+	border:0;
+	border-collapse:collapse;
+}
+#main .login td {
+	border: 0;
+}
+
+#main .err {
+	color: red;
+	font-weight:bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#main .info {
+	color: #600000;
+	font-style:italic;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#main .welcome {
+	padding: 5px;
+	color: black;
+	font-size: 14px;
+	font-weight:bold;
+}
+#menu {
+		padding: 10px;
+}
+
+#menu a {
+	color: #000000;
+}
+#datenav {
+	text-align: center;
+	width: 500px;
+	font-size: 12pt;
+}
